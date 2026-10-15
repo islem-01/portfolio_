@@ -20,7 +20,7 @@ if start!=-1:
 p.write_text(s)
 # Contact: remove standalone CV download contact row (header CV button remains site-wide)
 p=root/'contact.html'; s=p.read_text()
-needle='<a class="contact-link" href="assets/Islem_Zouari_CV_PFE2027.tex.pdf" download><span class="stat-icon">⇩</span><span><strong>Curriculum vitæ</strong><br>Télécharger le CV en PDF</span></a>'
+needle='<a class="contact-link" href="assets/Islem_Zouari_CV_PFE2027.pdf" download><span class="stat-icon">⇩</span><span><strong>Curriculum vitæ</strong><br>Télécharger le CV en PDF</span></a>'
 s=s.replace(needle,'')
 p.write_text(s)
 # Projects: add academic/personal/professional filters, clickable cards, and richer project summaries
